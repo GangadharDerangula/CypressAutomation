@@ -1,0 +1,48 @@
+{
+    "register" : {
+        "name" : "Virat",
+        "email" : "virat321@gmail.com",
+        "password" : "Kohli@310",
+        "first_name": "Virat",
+        "last_name" : "Kohli",
+        "company" : "ICC",
+        "address1" : "700 Osuna Rd NE, Albuquerque",
+        "country": "India",
+        "state": "Karnataka",
+        "city" : "Bangalore",
+        "zipcode" : "5600",
+        "mobile_number" : "(91) 8752819987"
+
+    },
+
+    "Login": {
+        "email" : "virat321@gmail.com",
+        "password" : "Kohli@310"
+    },
+
+    "name" : "Ganga",
+    "email" : "tester321@gmail.com",
+    "password" : "Ganga@310",
+    "first_name": "Roman",
+    "last_name" : "Reigns",
+    "company" : "WWE",
+    "address1" : "700 Osuna Rd NE, Albuquerque",
+    "country": "Australia",
+    "state": "Queensland",
+    "city" : "Townsville",
+    "zipcode" : "5600",
+    "mobile_number" : "(08) 87528199",
+
+    "Description" : {
+        "text" : "This is test Description of the User"
+    },
+    
+    "payment" : {
+        "name" : "Tester",
+        "cardNo" : "5011054488597827",
+        "cvc" : "837",
+        "month" : "12",
+        "year" : "2026"
+    }
+
+}
