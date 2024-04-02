@@ -3,6 +3,15 @@ class addCustomerObject{
     clickaddCustomerButton(){
         return cy.xpath('//button[@ng-click="addCust()"]')
     }
+    customerFirstName(){
+        return cy.xpath('//input[@placeholder="First Name"]')
+    }
+    customerLasttName(){
+        return cy.xpath('//input[@placeholder="Last Name"]')
+    }
+    customerPostCode(){
+        return cy.xpath('//input[@placeholder="Post Code"]')
+    }
 }
 // creating object of the above class
 const addCustomer = new addCustomerObject()
@@ -16,9 +25,9 @@ Cypress.Commands.add("clickOnAddCustomerButton",()=>{
 
 // Custome Command for -----> Entering FirstName,LastName,Post code
 Cypress.Commands.add("fillOutCustomerDetails",(firstName,lastName,postCode)=>{
-    cy.xpath('//input[@placeholder="First Name"]').type(firstName)
-    cy.xpath('//input[@placeholder="Last Name"]').type(lastName)
-    cy.xpath('//input[@placeholder="Post Code"]').type(postCode)
+    addCustomer.customerFirstName().type(firstName)
+    addCustomer.customerLasttName().type(lastName)
+    addCustomer.customerPostCode().type(postCode)
 })
 
 // Custome Command for ----> Submit addCustomer button

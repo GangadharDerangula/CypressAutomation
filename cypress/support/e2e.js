@@ -20,6 +20,10 @@ import '../support/PageObjects/bankManagerPageObjects.cy';
 import '../support/PageObjects/addCustomerPageObject.cy';
 import '../support/PageObjects/openAccountPageObject.cy'
 import '../support/PageObjects/customerObjectPage.cy'
+import '../support/PageObjects/customerLoginpageObject.cy'
+import '../support/PageObjects/transactionObject.cy'
+import deposit from '../support/PageObjects/depositObject.cy'
+import '../support/PageObjects/withdrawalObject.cy'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
