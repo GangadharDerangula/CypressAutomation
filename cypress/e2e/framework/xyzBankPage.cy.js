@@ -8,7 +8,7 @@ describe("XYZ Bank suite",()=> {
         })
     })
         
-    it.only("Click On Manager Login Button",function(){
+    it("Click On Manager Login Button",function(){
         // Click on manager login button
         cy.clickOnManagerLoginButton()
         // click on add Customer button
