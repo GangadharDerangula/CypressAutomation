@@ -24,6 +24,7 @@ import '../support/PageObjects/customerLoginpageObject.cy'
 import '../support/PageObjects/transactionObject.cy'
 import deposit from '../support/PageObjects/depositObject.cy'
 import '../support/PageObjects/withdrawalObject.cy'
+import '../support/PageObjects/nopCommRegistrationPageObj.cy'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
