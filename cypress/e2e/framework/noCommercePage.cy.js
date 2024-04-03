@@ -6,7 +6,7 @@ describe("noCommerce Page Framework",()=>{
             cy.visit(this.d.url)
         })
     })
-    it("Register User Place Order",function(){
+    it("Register User",function(){
         // Click On Register Link
         cy.clickOnRegister()
         // Click On Gender Radio Button
@@ -25,7 +25,22 @@ describe("noCommerce Page Framework",()=>{
         cy.verifyRegisterMessage()
         // Click On Continue Button
         cy.clickOnContinueButton()
+        // Select the Agree Check Box
+        cy.selectAgreeCheckBox()
         
+    })
+
+    it.only("Register User Place Order",()=>{
+        // SelectHTC Andriod Phone 
+        cy.selectItem()
+        // Item into AddtoCart
+        cy.itemIntoAddToCart()
+        // Go To Shoping Cart
+        cy.checkShoppingCart()
+        // select the agree Check Box
+        cy.selectAgreeCheckBox()
+        // Click On Checkout Button
+        cy.clickOnCheckoutButton()
     })
 
 })
