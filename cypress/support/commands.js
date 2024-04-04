@@ -24,7 +24,17 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-
+// import * as faker from "@faker-js/faker"
+const { fakerDE: faker } = require('@faker-js/faker');
+// Custom Command for ----> faker
+Cypress.Commands.add("generaterFakeUserData",()=>{
+    const firstName = faker.person.firstName() 
+    const lastName = faker.person.lastName()
+    const email = faker.internet.email()
+    const telephone = faker.phone.number() 
+    const psw = faker.internet.password() 
+    return{firstName,lastName,email,telephone,psw}
+});
 import testData from "../fixtures/swaglabs.json";
 
 // Creating Custom Command for SWAGlabs Login
