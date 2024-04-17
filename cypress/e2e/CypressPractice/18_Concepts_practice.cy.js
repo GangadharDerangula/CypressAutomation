@@ -33,11 +33,39 @@ describe("Again Pracitce Concepts", ()=> {
         cy.get('.wM6W7d').contains("JavaScript introduction in english",{matchCase:false}).click()
     })
 
-    it.only("Multi-tab's Handling",()=> {
+    it("Multi-tab's Handling",()=> {
         cy.visit("https://www.cypress.io/")
         // cy.get("#dropdownDocs").invoke("removeAttr","target").click()
-        cy.get("#dropdownDocs").invoke('removeAttr','target').click()
+        cy.get("#dropdownDocs").invoke("attr",'target',"_self").click()
         cy.go('back')
         cy.go(1)
+    })
+
+    it.only("iframe Handling",()=> {
+
+        
+        // cy.visit("https://the-internet.herokuapp.com/iframe");
+
+        // APPROACH --- 1
+        // cy.get("#mce_0_ifr").then((frame) => {
+        //     const fbody = frame.contents().find('#tinymce')
+        //     cy.wrap(fbody).clear().type("Hello")
+        // })
+
+        // APPROACH ---- 2
+        // const fbody = cy.get('#mce_0_ifr').should("be.visible")
+        // .its("0.contentDocument.body")
+        // .then(cy.wrap)
+        // fbody.clear().type("Hello Gangadhar")
+
+        cy.visit("https://www.hyrtutorials.com/p/frames-practice.html")
+
+        cy.get('#frm1').then((frame) => {
+            const fbody = frame.contents().find('#selectnav1')
+            cy.wrap(fbody).select(3)
+        })
+        
+        
+        
     })
 })

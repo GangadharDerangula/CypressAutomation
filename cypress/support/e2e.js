@@ -27,6 +27,7 @@ import deposit from '../support/PageObjects/depositObject.cy'
 import '../support/PageObjects/withdrawalObject.cy'
 import '../support/PageObjects/nopCommRegistrationPageObj.cy'
 import  registerPlaceOrder from '../support/PageObjects/nopEcomRegisPlaceOrderObj.cy'
+import {registerPage} from "../support/PageObjects/naveenAutoRegisPage.cy"
 
 // Faker
 import '../support/commands'
