@@ -1,7 +1,7 @@
 
 describe("Register Page Validation",function() {
     beforeEach(function() {
-        cy.visit("https://naveenautomationlabs.com/opencart/")
+        cy.visit(Cypress.env("URL"))
         cy.fixture("naveenAutoData").then((data) => {
             this.d = data
         })

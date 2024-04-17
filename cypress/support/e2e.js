@@ -28,6 +28,7 @@ import '../support/PageObjects/withdrawalObject.cy'
 import '../support/PageObjects/nopCommRegistrationPageObj.cy'
 import  registerPlaceOrder from '../support/PageObjects/nopEcomRegisPlaceOrderObj.cy'
 import {registerPage} from "../support/PageObjects/naveenAutoRegisPage.cy"
+import loginPage from './PageObjects/naveenLabsLoginPage.cy';
 
 // Faker
 import '../support/commands'
